@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ScreenCast Pro</title>
+    <meta name="description" content="Privacy Policy for ScreenCast Pro Android Application. Compliant with Google Play Console Developer Policies.">
+    <style>
+        :root {
+            --primary: #0088FF;
+            --primary-dark: #005bb5;
+            --secondary: #00F5FF;
+            --accent: #9D4EDD;
+            --bg-color: #0d1117;
+            --surface-color: #161b22;
+            --border-color: #30363d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --text-muted: #6e7681;
+            --badge-bg: rgba(0, 136, 255, 0.15);
+            --badge-border: rgba(0, 136, 255, 0.35);
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --primary: #0066cc;
+                --primary-dark: #004c99;
+                --secondary: #0099b8;
+                --accent: #7928ca;
+                --bg-color: #f6f8fa;
+                --surface-color: #ffffff;
+                --border-color: #d0d7de;
+                --text-primary: #1f2328;
+                --text-secondary: #57606a;
+                --text-muted: #8c959f;
+                --badge-bg: rgba(0, 102, 204, 0.08);
+                --badge-border: rgba(0, 102, 204, 0.25);
+                --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: var(--card-shadow);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 10px;
+            }
+            .container {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 28px;
+            margin-bottom: 36px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background-color: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .meta-item strong {
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 0 0 18px 24px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-primary);
+        }
+
+        .callout {
+            background-color: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        .callout p {
+            margin: 0;
+            color: var(--text-primary);
+            font-size: 14.5px;
+        }
+
+        .permission-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .permission-table th,
+        .permission-table td {
+            border: 1px solid var(--border-color);
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        .permission-table th {
+            background-color: var(--badge-bg);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .permission-table td {
+            color: var(--text-secondary);
+        }
+
+        .permission-table code {
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+            background: rgba(125, 125, 125, 0.15);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12.5px;
+            color: var(--primary);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="app-badge">Official Policy</span>
+        <h1>Privacy Policy for ScreenCast Pro</h1>
+        <div class="meta-info">
+            <div class="meta-item"><strong>Application:</strong> ScreenCast Pro</div>
+            <div class="meta-item"><strong>Package ID:</strong> <code>com.aistudio.screencastpro.rkxv</code></div>
+            <div class="meta-item"><strong>Effective Date:</strong> October 28, 2026</div>
+            <div class="meta-item"><strong>Developer Contact:</strong> <a href="mailto:zeeshankhan19933@gmail.com">zeeshankhan19933@gmail.com</a></div>
+        </div>
+    </div>
+
+    <div class="callout">
+        <p><strong>Core Privacy Principle:</strong> ScreenCast Pro is built with a local-first, privacy-by-design architecture. Your screen recordings, screenshots, and live stream authentication credentials remain entirely stored on your device. We do not collect, store, sell, or upload your private media recordings to our servers.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy describes how <strong>ScreenCast Pro</strong> ("we", "our", or "the App") handles information when you use our Android application. This policy has been created in strict accordance with the <strong>Google Play Developer Program Policies</strong>, including the User Data Policy, Permissions Policy, and Family Policy.</p>
+    <p>By downloading, installing, or using ScreenCast Pro, you consent to the data practices described in this policy.</p>
+
+    <h2>2. Information We Do NOT Collect</h2>
+    <p>To give you full peace of mind when capturing and streaming your screen:</p>
+    <ul>
+        <li><strong>No Personal Identity:</strong> We do not require registration, login, email addresses, phone numbers, or passwords to use the App.</li>
+        <li><strong>No Media Uploads:</strong> Screen recordings and screenshots are generated locally on your Android device and saved directly to your device storage (MediaStore). We operate no remote cloud storage servers that receive your video or screenshot files.</li>
+        <li><strong>No Keystroke or Screen Logging:</strong> We do not inspect, log, or record confidential text, credit card inputs, passwords, or personal messages. Capture only begins upon your deliberate initiation.</li>
+    </ul>
+
+    <h2>3. Android Permissions and How They Are Used</h2>
+    <p>ScreenCast Pro strictly adheres to the principle of least privilege. Each permission requested serves a specific, user-facing core function:</p>
+
+    <table class="permission-table">
+        <thead>
+            <tr>
+                <th>Permission</th>
+                <th>API / Type</th>
+                <th>Purpose & Implementation Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>MediaProjection</code></td>
+                <td>System Capture API</td>
+                <td>Captures display frames to produce screen video recordings and screenshots. Capture starts exclusively after you explicitly accept the Android system dialog. A permanent indicator and stop control is shown in your status bar during capture.</td>
+            </tr>
+            <tr>
+                <td><code>RECORD_AUDIO</code></td>
+                <td>Microphone / Internal Audio</td>
+                <td>Records audio commentary or internal gameplay/app sounds during recording sessions. Audio is encoded into the MP4 media stream locally on your device and is never transmitted to us.</td>
+            </tr>
+            <tr>
+                <td><code>CAMERA</code></td>
+                <td>Camera2 API</td>
+                <td>Powers the optional Facecam front-camera preview window while gaming or making tutorial videos. Camera video is rendered locally on screen and is not stored or shared anywhere without your knowledge.</td>
+            </tr>
+            <tr>
+                <td><code>SYSTEM_ALERT_WINDOW</code></td>
+                <td>Display over other apps</td>
+                <td>Enables the floating overlay widget so you can start, pause, stop recording, or snap a screenshot while inside any game or full-screen app without needing to switch back to ScreenCast Pro.</td>
+            </tr>
+            <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Notifications (Android 13+)</td>
+                <td>Displays the active recording or streaming foreground service notification, allowing you to monitor elapsed time and stop recording with one tap.</td>
+            </tr>
+            <tr>
+                <td><code>FOREGROUND_SERVICE</code></td>
+                <td>Foreground Service Types (Android 14+)</td>
+                <td>Complies with Android 14+ requirements using dedicated service types: <code>mediaProjection</code>, <code>camera</code>, and <code>microphone</code> to maintain capture reliability when the App is in the background.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Live Streaming & RTMP Credentials</h2>
+    <p>ScreenCast Pro allows users to broadcast live directly to RTMP destinations (such as YouTube Live, Facebook Live, or custom RTMP servers):</p>
+    <ul>
+        <li><strong>Direct Connection:</strong> Live stream video and audio packets are encoded on your device and transmitted directly over RTMP/RTMPS sockets to your target destination server. Streams do not pass through intermediate proprietary servers.</li>
+        <li><strong>Encrypted Stream Keys:</strong> Stream keys and server URLs you enter are stored locally on your device in secure app storage. We never transmit or share your stream keys with any third party.</li>
+    </ul>
+
+    <h2>5. Third-Party Services & Advertising</h2>
+    <p>The App integrates third-party software development kits (SDKs) to support development and maintain the service:</p>
+
+    <h3>Google AdMob & Google Mobile Ads</h3>
+    <p>We use Google AdMob to display banner, interstitial, and rewarded video ads (such as unlocking optional high-bitrate recording features).</p>
+    <ul>
+        <li>AdMob may collect anonymized device identifiers (including the Google Advertising ID), IP addresses, and diagnostic telemetry to serve personalized or non-personalized advertisements, detect fraud, and provide analytics.</li>
+        <li><strong>Consent Management:</strong> In compliance with European Economic Area (EEA), UK, and applicable US privacy laws (GDPR, CCPA), we integrate Google's User Messaging Platform (UMP) SDK to present users with explicit choices regarding ad personalization and cookie consent.</li>
+        <li>For detailed information on how Google processes user data, please review:
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms</a> and
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.
+        </li>
+    </ul>
+
+    <h2>6. Data Storage, Retention, and Deletion</h2>
+    <p><strong>Your Media Stays Yours:</strong> All screen recording MP4 files and screenshot PNG/JPEG files are stored on your device in the standard Android public media directories (<code>Movies/ScreenCastPro</code> and <code>Pictures/ScreenCastPro</code>).</p>
+    <ul>
+        <li>You retain 100% control over retention. You can rename, share, or delete any recording at any time from within the App's "Library" tab or through your preferred Gallery/File Manager application.</li>
+        <li>Deleting a file in the App deletes it permanently from local device storage.</li>
+        <li>Uninstalling the App does not automatically erase your saved video captures if they were saved to the system MediaStore.</li>
+    </ul>
+
+    <h2>7. Children's Privacy (COPPA Compliance)</h2>
+    <p>ScreenCast Pro does not knowingly collect or solicit personal information from children under the age of 13 (or under 16 in the European Union). The App is intended for general audiences interested in screen recording, gaming commentary, and tutorial creation. If you believe that a child has provided us with personal information, please contact us immediately so that we can take appropriate measures.</p>
+
+    <h2>8. Security Standards</h2>
+    <p>We implement industry-standard security practices to safeguard your settings and stream profiles:</p>
+    <ul>
+        <li>Sensitive configuration data is isolated within Android's protected application sandbox (EncryptedSharedPreferences and private internal storage).</li>
+        <li>Live RTMP and RTMPS connections utilize standard cryptographic protocols supported by the destination platform.</li>
+    </ul>
+
+    <h2>9. Changes to this Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for operational, legal, or regulatory reasons. When updates are published, the revised date at the top of this policy will be refreshed. We encourage you to review this policy periodically.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or the privacy practices of ScreenCast Pro, please contact our support team:</p>
+    
+    <div class="contact-box">
+        <p><strong>ScreenCast Pro Support Team</strong></p>
+        <p>Developer Email: <a href="mailto:zeeshankhan19933@gmail.com">zeeshankhan19933@gmail.com</a></p>
+        <p>App Package Name: <code>com.aistudio.screencastpro.rkxv</code></p>
+        <p>Response Time: We strive to respond to all user inquiries within 48 business hours.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 ScreenCast Pro. All rights reserved.</p>
+        <p>Compliant with Google Play Developer Policy and Google API Services User Data Policy.</p>
+    </div>
+</div>
+
+</body>
+</html>
